@@ -1,11 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kollol -Devloper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 26);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(9, 9, 72);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 13px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(55, 134, 202);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0px;
+            align-items: center;
+        }
+
+        /* .firstsection>div {
+            width: 30%;
+        } */
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 110px 0px;
+        }
+
+        .leftsection .buttons {
+            margin: 11px 0px;
+        }
+
+        .leftsection .btn {
+            padding: 8px;
+            background-color: rgb(14 14 19);
+            border-radius: 12px 12px;
+            cursor: pointer;
+            border: 2px solid #f1ebeb;
+            color: white;
+        }
+
+        .leftsection .btn:hover{
+            /* color: rgb(234, 0, 59); */
+            border: 2px solid rgb(60, 51, 234);
+            background-color: rgba(227, 216, 216, 0.897);
+            color: black;
+        }
+
+
+
+        .cyan {
+            color: rgb(252, 104, 5);
+        }
+
+        .text-gray {
+            font-size: 0.8rem;
+        }
+
+        #element {
+            color: rgb(252, 104, 5);
+            ;
+        }
+
+        main hr {
+            margin: 30px 77px;
+            background: #3691bf;
+            height: 1.2px;
+            border: 0px;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 66vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 80px 29px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 60px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 100px;
+        }
+
+        .image-top {
+            width: 43px;
+            /* margin: -15px -24px; */
+            position: relative;
+            top: -59px;
+            left: -20px
+        }
+
+        .text-top {
+            top: 24px;
+            position: relative;
+            left: -47px;
+            font-size: 15px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            font-size: 9px;
+            position: relative;
+            top: 31px;
+            left: -47px;
+            color: gray;
+            width: 150px;
+        }
+
+        /* CSS for third section */
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .thirdsection .first-project {
+            display: flex;
+            justify-content: space-around;
+            margin: 5px 0px;
+            align-items: center;
+            position: relative;
+            left: 130px;
+        }
+        .thirdsection .second-project {
+            display: flex;
+            justify-content: space-around;
+            margin: 75px 0px;
+            align-items: center;
+            position: relative;
+            left: 130px;
+        }
+
+        .thirdsection .third-project {
+            display: flex;
+            justify-content: space-around;
+            margin: 75px 0px;
+            align-items: center;
+            position: relative;
+            left: 130px;
+        }
+        /* .thirdsection .first-project .imdb{
+            width: 50%;
+        } */
+
+        .footer {
+            background-color: #4e4e50;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            font-size: 0.7rem;
+        }
+
+        .footer>div {
+            width: 223px;
+            display: flex;
+            /* margin: 5px 5px; */
+        }
+
+        .footer .logo{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            border-radius: 10px 10px;
+        }
+
+        .footer .fcommon{
+            margin: 17px 5px;
+
+        }
+        .footer .fcommon a{
+            text-decoration: none;
+            color: white;
+
+        }
+        footer .last {
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <div class="left">Kollol's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#pro">Project</a></li>
+                    <li><a href="">Contact me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="cyan">Kollol</span>
+                <div>and i am passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" >Download Resume</button>
+                    <button class="btn"><a href="https://github.com/Kollol5" target="_blank" style="text-decoration: none; color: white;">Github</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+
+        <!-- secondsection -->
+
+
+
+        <section class="secondsection" id="service">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="c++ png.jpg" alt="">
+                    <div class="text-top">C,C++ & JAVA Developer (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem dicta aliquam dignissimos -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html png.png" alt="">
+                    <div class="text-top">HTML Developer (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem dicta aliquam dignissimos -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css png.png" alt="">
+                    <div class="text-top">CSS Developer (2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem dicta aliquam dignissimos -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js png.png" alt="">
+                    <div class="text-top">JS --Developer (2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem dicta aliquam dignissimos -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="nodejs png.png" alt="">
+                    <div class="text-top">NODEJS Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem dicta aliquam dignissimos -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python png.png" alt="">
+                    <div class="text-top">PYTHON Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, autem dicta aliquam dignissimos -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- third Section -->
+        <div class="thirdsection" id="pro">
+            <h1>Projects</h1>
+            <div class="first-project">
+                <div class="first-project-left">
+                    <a href="https://kollol5.github.io/first/" target="_blank" style="text-decoration: none; color:white;"><h2>TO-do List</h2></a>
+                </div>
+                <div class="first-project-right">
+                    <img src="todo.png" alt="" style="width: 222px;">
+                </div>
+            </div>
+            <div class="second-project">
+                <div class="first-project-left">
+                    <a href="https://kollol5.github.io/IMDB-CLONE/" target="_blank" style="text-decoration: none; color:white;" ><h2>MUSIC PLAYER CLONE</h2></a>
+                </div>
+                <div class="first-project-right">
+                    <img class="imdb" src="imdb.png" alt="" style="width: 222px; position: relative; left: -34px;">
+                </div>
+            </div>
+            <div class="third-project">
+                <div class="first-project-left">
+                    <h2>RGB Digital Watch</h2>
+                </div>
+                <div class="first-project-right">
+                    <img  src="Digital_clock.png" alt="" style="width: 222px; position: relative; left: -34px;">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="footer" id="about">
+            <div class="footer-first">
+                <h3> Kollol Devloper's portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <!-- <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>contact</li>
+                </ul> -->
+                <img class="logo fcommon" src="LinkedIn_logo_initials.png" alt="">
+                <div class="fcommon"><a href="https://www.linkedin.com/in/kollol-mallick-b52a32247/" target="_blank">Linkedin</a></div>
+            </div>
+            <div class="footer-third" style="position: relative; left: -48px;">
+                <!-- <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>contact</li>
+                </ul> -->
+                <img class="logo fcommon" src="gmaillogo.jpg" alt="">
+                <div class="fcommon"><a href="">kollolmallick5@gmail.com</a></div>
+            </div>
+            <div class="footer-forth">
+               <!-- <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>contact</li>
+                </ul> -->
+                <img class="logo fcommon" src="GitHub-logo.png" alt="">
+                <div class="fcommon"><a href="https://github.com/Kollol5" target="_blank">Github</a></div>
+            </div>
+        </div>
+        <div class="last">
+            Copyright&#169www.kollol'sportfolio.com || all rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper', 'Graphic Designer', ' And BMS Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
